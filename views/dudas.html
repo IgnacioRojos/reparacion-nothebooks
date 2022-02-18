@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Dudas</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 	
 	<!--links del ccs-->
 	<link rel="stylesheet" href="../css/estilo.css">
@@ -71,7 +73,7 @@
 				<h1 id="duda">Presenta Tus Dudas Aqui: </h1>
 			</div>
 
-			<form action="#" class="cuadro_duda">
+			<form action="#" class="cuadro_duda animate__animated animate__flipInX">
 				<label for="Nombre" class="nombre_duda">Nombre: <input type="text" name="Nombre" placeholder="NOMBRE" required></label><br>
 
 				<br>
@@ -184,5 +186,10 @@
 		<!--cierre footer-->
 
 	</div>
+	<script src="../js/wow.min.js"></script>
+    <script>
+    	new WOW().init();
+    </script>
+
 </body>
 </html>

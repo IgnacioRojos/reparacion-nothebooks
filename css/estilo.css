@@ -6,7 +6,8 @@
 }
 /*MODIFICA A TODAS LAS VIEWS*/
 body{
-	background-color: skyblue;
+	background-image:linear-gradient(to bottom, skyblue, white);
+
 }
 
 /* estilo del index.html */
@@ -464,7 +465,7 @@ p.texto_explicacion{
 	}
 	.carta{
 		grid-area: carta;
-		background-color: greenyellow;
+		background-image:linear-gradient(to bottom, greenyellow, whitesmoke);
 		width: 21px;
 		font-size: 15px;
 		
@@ -1012,7 +1013,7 @@ p.texto_explicacion{
 	}
 	.carta{
 		grid-area: carta;
-		background-color: greenyellow;
+		background-image:linear-gradient(to bottom, greenyellow, whitesmoke);
 		margin-bottom: 50px;
 		margin-right: 50px;
 	}
