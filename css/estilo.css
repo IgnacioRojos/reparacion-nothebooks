@@ -1,0 +1,1242 @@
+
+/*linkeo de la fuente gramática*/
+
+*{
+	font-family: 'Merriweather Sans', sans-serif;
+}
+/*MODIFICA A TODAS LAS VIEWS*/
+body{
+	background-color: skyblue;
+}
+
+/* estilo del index.html */
+
+img.imagen__decorativa{
+	width: 100px;
+	height: 100px;
+	/*padding-left: -11px;
+	padding-right: 7px;*/
+	border: 4px solid lightcoral;
+	/*position: relative;
+	left: 250px;*/
+
+}
+
+img.logo_whatsapp{
+	width: 200px;
+	height: 200px;
+	border: 10px solid blueviolet;
+	
+}
+
+.texto_presentacion{
+	font-size: 25px;
+	line-height: 38px;
+	text-align: left;
+	color: blue;
+	text-decoration: underline;
+	font-style: italic;
+}
+
+.opinion{
+	list-style: none;
+	margin-right: 750px;
+}
+
+.nombre_opinion{
+	text-align: left;
+	text-decoration: underline blue 5px;
+}
+
+.titulo_reseña{
+	padding-right: 150px;
+}
+
+/*modifica en todas las views*/
+div.logo{
+	height: 15px;
+}
+ 
+/*fin del estilo del index.html*/
+
+/*inicioo estilo de nosotros.html*/
+
+p.texto_explicacion{
+	font-style: italic;
+}
+
+/*cierre del estilo de nosotros.html*/
+
+/*inicio del estilo servicios.html */
+
+.tabla__precios{
+	list-style: none;
+	padding-bottom: 25px;
+	
+}
+
+.servicios_numerados{
+	list-style: none;
+
+}
+
+/*cierre del estilo servicios.html*/
+
+
+
+/*MEDIA QUERIE MOBILE*/
+
+@media only screen and (max-width: 768px){
+	
+	/*COLOR DISTINTIVO DE LA MEDIA QUERIE*/
+
+	body{
+		background-color: lightpink;
+	}
+	
+	/*GRID GENERAL PARA TODAS LAS VIEWS*/
+
+	.indexEstilo{
+		display: grid;
+		grid-template-areas: 
+		"header"
+		"contenido"
+		"footer";
+		grid-template-columns:auto;
+		grid-auto-rows: auto auto auto;
+		 
+	}
+
+	.header{
+		grid-area: header;
+	}
+	.footer{
+		grid-area: footer;
+	}
+	.contenido{
+		grid-area: contenido;
+	}
+	.header{
+		display: grid;
+		grid-template-areas: 
+		"logo"
+		"barra_navegacion";
+		grid-template-columns: auto;
+		grid-template-rows: auto;
+	}
+	.logo{
+		grid-area: logo;
+	}
+	.logo__pagina{
+		height: auto;
+		width: 64px
+	}
+	.barra_navegacion{
+		grid-area: barra_navegacion;
+
+	}
+
+	/*modifica en todas las views*/
+	div.barra_navegacion{
+		max-width: 300px;
+		background-color: grey;
+		font-size: 10px;
+		margin-left: 66px;
+
+	}
+
+	/*modifica en todas las views*/	
+	.menu_horizontal{
+		list-style: none;
+		display: flex;
+		justify-content: space-around;
+	
+
+	}
+
+	/*modifica en todas las views*/
+	.menu_horizontal > li > a{
+		display: block;
+		color: white;
+		text-decoration: none;
+	}
+
+	/*modifica en todas las views*/
+	.menu_horizontal >li:hover{
+		background-color: black;
+	}
+
+	/*modifica en todas las views*/
+	.menu_vertical{
+		position: absolute;
+		display: none;
+		list-style: none;
+		width: 100px;
+		background-color: rgba(0, 0, 0, .5);
+	}
+
+	/*modifica en todas las views*/
+	.menu_horizontal li:hover .menu_vertical{
+		display: block;
+	}
+
+	/*modifica en todas las views*/
+	.menu_vertical li:hover{
+		background-color: red;
+	}
+
+
+	/*modifica en todas las views*/
+	.menu_vertical li a{
+		display: none;
+		color: white;
+		text-decoration: none;
+	}
+	/*GRID DE LA VISTA INDEX*/
+
+	.contenido{
+		display: grid;
+		grid-template-areas: 
+		"texto_presentacion"
+		"imagen_decorativa"
+		"cuadro_res"
+		"reseñas_clientes";
+		grid-template-columns: auto;
+		grid-template-rows: auto auto auto auto;
+		overflow-x: hidden;
+	}
+
+	.texto_presentacion{
+		grid-area: texto_presentacion;
+		font-size: 9px;
+		padding-right: 810px;
+	}
+
+	.imagen_decorativa{
+		grid-area: imagen_decorativa;
+	}
+	.imagen_ppp{
+		width: 250px;
+	}
+
+	.cuadro_res{
+		grid-area: cuadro_res;
+	}
+	.reseñas_clientes{
+		grid-area: reseñas_clientes;
+		font-size: 14px;
+	}
+	
+	.cuadro_res_app{
+		display: grid;
+		grid-template-areas: 
+		"titulo_reseña"
+		"cuadro__reseña";
+		grid-template-columns: auto;
+		grid-template-rows: auto;
+	}
+	.titulo_reseña{
+		grid-area: titulo_reseña;
+		padding-right: 564px;
+	}
+	.cuadro__reseña{
+		grid-area: cuadro__reseña;
+		padding-right: 554px;
+	}
+
+	/*MODIFICA AL PIE DE PAGINA DE LAS VIEWS DUDAS,SERVICIOS,CONTACTO, INDEX*/
+	.pie_pagina3{
+		display: grid;
+		grid-template-areas: 
+		"imagen_whats3"
+		"titulo__footer3"
+		"texto__contacto3";
+		grid-template-columns:auto;
+		grid-template-rows: auto auto auto ;
+	}	
+	.imagen_whats3{
+		grid-area: imagen_whats3;
+	}
+
+	.texto__contacto3{
+		grid-area: texto__contacto;
+		padding-right: 817px;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	.titulo__footer3{
+		grid-area: titulo__footer3;
+		/*padding-right: 793px;*/
+		font-size: 20px;
+		text-align: center;
+		text-decoration: underline purple 8px;
+	}
+
+
+	.reseñas_clientes{
+		display: grid;
+		grid-template-areas: 
+		"nombre1 opinion1" 
+		"nombre2 opinion2"
+		"nombre3 opinion3" 
+		"nombre4 opinion4"
+		"nombre5 opinion5" 
+		"nombre5 opinion5" ;
+		grid-template-columns: auto auto;
+		grid-template-rows: auto auto auto auto auto auto;
+	}
+
+	.nombre1{
+		grid-area: nombre1;
+
+	}
+	.nombre2{
+		grid-area: nombre2;
+
+	}
+	.nombre3{
+		grid-area: nombre3;
+	}
+	.nombre4{
+		grid-area: nombre4;
+
+	}
+	.nombre5{
+		grid-area: nombre5;
+	}
+
+	.opinion1{
+		grid-area: opinion1;
+		display: flex;
+		flex-direction: column;
+		margin-right: 855px;
+	}
+	.opinion2{
+		grid-area: opinion2;
+		display: flex;
+		flex-direction: column;
+		margin-right: 855px;
+
+	}
+	.opinion3{
+		grid-area: opinion3;
+		display: flex;
+		flex-direction: column;
+		margin-right: 855px;
+	}
+	.opinion4{
+		grid-area: opinion4;
+		display: flex;
+		flex-direction: column;
+		margin-right: 855px;
+	}
+	.opinion5{
+		grid-area: opinion5;
+		display: flex;
+		flex-direction: column;
+		margin-right: 855px;
+	}
+
+	/*FIN GRID DE LA VISTA INDEX*/
+
+
+	/*GRID DE LA VISTA NOSOTROS*/
+	.contenido1{
+		display: grid;
+		grid-template-areas: 
+		"quienes"
+		"empezar";
+		grid-template-columns: auto auto;
+		grid-template-rows: auto auto;
+	}
+	.quienes{
+		grid-area: quienes;
+	}
+	.empezar{
+		grid-area: empezar;
+	}
+	
+	.quienes{
+		display: grid;
+		grid-template-areas: 
+		"titulo__explicacion"
+		"texto_explicacion"
+		"imagen__reparacion";
+		grid-template-columns: auto auto;
+		grid-template-rows: auto auto;
+	}
+
+	.titulo__explicacion{
+		grid-area: titulo__explicacion;
+		font-size: 35px;
+		
+	}
+	.texto_explicacion{
+		grid-area: texto_explicacion;
+		font-size: 8px;
+	}
+	.imagen__reparacion{
+		grid-area: imagen__reparacion;
+	}
+
+	iframe.video__presentacion{
+	border: 5px outset darkblue;
+	/*margin-bottom: 30px;
+	margin-top: 50px;*/
+	width: 300px;
+	}
+
+	img.imagen__reparacion{
+	width: 230px;
+	}
+
+	.empezar{
+		display: grid;
+		grid-template-areas: 
+		"titulo__video"
+		"video__presentacion";
+		grid-template-columns: auto;
+		grid-template-rows: auto auto;
+	}
+
+	.titulo__video{
+		grid-area: titulo__video;
+		/*margin-top: 152px;*/
+		font-size: 20px;
+	}
+	.video__presentacion{
+		grid-area: video__presentacion;
+	}
+	p.texto_explicacion{
+		font-style: italic;
+	}
+	.pie_pagina2{
+		display: grid;
+		grid-template-areas: 
+		"imagen_whats2"
+		"titulo__footer2"
+		"texto__contacto2";
+		grid-template-columns: auto;
+		grid-template-rows: auto auto auto;
+	}	
+	.imagen_whats2{
+		grid-area: imagen_whats2;
+		width: 200px;
+	}
+	.titulo__footer2{
+		grid-area: titulo__footer2;
+		font-size: 20px;
+		text-align: center;
+		text-decoration: underline purple 8px;
+
+	}
+	.texto__contacto2{
+		grid-area: texto__contacto2;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	/*FIN GRID DE LA VISTA NOSOTROS*/
+
+
+	/*GRID DE LA VISTA SERVICIOS*/
+	.contenido3{
+		display: grid;
+		grid-template-areas: 
+		"tabla"
+		"titulo_note"
+		"carta";
+		grid-template-columns: auto;
+		grid-template-rows: auto auto auto;
+
+		
+	}
+
+	.tabla{
+		grid-area: tabla;
+		margin-bottom: 42px;
+		margin-top: 40px;
+		font-size: 15px;
+		color: darkgrey;
+		border: 20px inset sandybrown;
+		margin-right: 10px;
+	}
+	.carta{
+		grid-area: carta;
+		background-color: greenyellow;
+		width: 21px;
+		font-size: 15px;
+		
+	}
+	.titulo_note{
+		grid-area: titulo_note;
+		color: greenyellow;
+		text-decoration: underline black solid;
+	}
+
+	/*MODIFICA AL PIE DE PAGINA DE LAS VIEWS DUDAS,SERVICIOS,CONTACTO, INDEX*/
+	.pie_pagina3{
+		display: grid;
+		grid-template-areas: 
+		"imagen_whats3"
+		"titulo__footer3"
+		"texto__contacto3";
+		grid-template-columns: auto;
+		grid-template-rows: auto auto auto;
+	}	
+
+	.imagen_whats3{
+		grid-area: imagen_whats3;
+		width: 200px;
+	}
+
+	.titulo__footer3{
+		grid-area: titulo__footer3;
+		font-size: 15px;
+		text-align: center;
+		text-decoration: underline purple 8px;
+
+	}
+
+	.texto__contacto3{
+		grid-area: texto__contacto3;
+		font-weight: bold;
+		text-align: center;
+		padding-right: 8px;
+	}
+
+	/*FIN GRID DE LA VISTA SERVICIOS*/
+
+
+	/*GRID DE LA VISTA CONTACTO*/
+	.contenido2{
+		display: grid;
+		grid-template-areas: 
+		"telefono_contacto"
+		"contacto_mail"
+		"medios_pagos"
+		"mapa";
+		grid-template-columns: auto;
+		grid-template-rows: auto auto auto auto;
+	}
+
+	.telefono_contacto{
+		grid-area: telefono_contacto;
+	}
+
+	.contacto_mail{
+		grid-area: contacto_mail;
+	}
+
+	.medios_pagos{
+		grid-area: medios_pagos;
+	}
+
+	.mapa{
+		grid-area: mapa;
+	}
+
+	.medios_pagos{
+		display: grid;
+		grid-template-areas: 
+		"titulo__pagos"
+		"titulo__transferencia"
+		"logo__transferencia" 
+		"titulo__mercadoPago"
+		"logo__mercadoPago";
+		grid-template-columns: auto;
+		grid-template-rows: auto auto auto auto auto;
+	}
+
+	.titulo__pagos{
+		grid-area: titulo__pagos;
+		text-decoration: underline blue 10px;
+		padding-left: 91px;
+		
+	}
+
+	.titulo__transferencia{
+		grid-area: titulo__transferencia;
+		/*margin-left: 282px;*/
+	}
+
+	.titulo__mercadoPago{
+		grid-area: titulo__mercadoPago;
+	}
+
+	.logo__transferencia{
+		grid-area: logo__transferencia;
+		/*margin-left: 250px;*/
+		width: 250px;
+	}
+
+	.logo__mercadoPago{
+		grid-area: logo__mercadoPago;
+		/*width: 250px;*/
+		/*padding-left: 460px;*/
+		width: 250px;
+	}
+
+	.mapa{
+		display: grid;
+		grid-template-areas: 
+		"titulo__local"
+		"mapa__local";
+		grid-template-columns: auto;
+		grid-template-rows: auto;
+	}
+
+	.titulo__local{
+		grid-area: titulo__local;
+		/*margin-left: 756px;*/
+		/*font-size: 35px;*/
+	}
+
+	.mapa__local{
+		grid-area: mapa__local;
+		/*margin-left: 614px;*/
+		width: 362px;
+	}
+
+	.logo__email{
+		width: 250px;
+	}
+
+	.telefono_img{
+		width: 250px;
+	}
+	
+	.logo__telefono{
+		width: 1px;
+	}
+	/*FIN GRID DE LA VISTA CONTACTO*/
+
+	/*GRID DE LA VISTA DUDA*/
+
+	.contenido4{
+		display: grid;
+		grid-template-areas: 
+		"titulo_duda"
+		"cuadro_duda" 
+		"preguntas_frecuentes";
+		grid-template-columns: auto auto;
+		grid-template-rows: auto auto;
+		
+	}
+
+	.titulo_duda{
+		grid-area: titulo_duda;
+	}
+
+	.preguntas_frecuentes{
+		grid-area: preguntas_frecuentes;
+		/*font-size: 15.5px;*/
+	}
+
+	.cuadro_duda{
+		grid-area: cuadro_duda;
+	}
+
+	textarea{
+		width: 344px;
+	}
+
+	.pregunta{
+		text-decoration: underline 5px black;
+		color: red;
+		font-style: italic;
+	}
+
+	.respuesta{
+		list-style: none;
+		color: hotpink;
+		
+	}
+
+	.cuadro_duda{
+		background-color: yellow;
+		width: 358px;
+		text-align: center;
+		
+	}
+
+	h1{
+		text-align: left;
+		font-size: 29px;
+		
+	}
+	/*FIN GRID DE LA VISTA DUDA*/
+
+	
+}
+
+/*FIN MEDIA QUERIE MOBILE*/
+	
+
+
+
+/*MEDIA QUERIE DE LA VISTA PC Y NOTHEBOOK*/
+
+@media only screen and (min-width: 1024px){
+
+	.logo__pagina{
+		width: 236px;
+		height: 230px;
+	}
+	
+	.indexEstilo1{
+		display: grid;
+		grid-template-areas: 
+		"header"
+		"contenido"
+		"footer";
+		grid-template-columns:auto;
+		grid-auto-rows: auto auto auto;
+		overflow-x: hidden; 
+	}
+
+	.header{
+		grid-area: header;
+	}
+	.footer{
+		grid-area: footer;
+	}
+	.contenido{
+		grid-area: contenido;
+	}
+
+	/*modifica en todas las views*/
+	div.barra_navegacion{
+		max-width: 900px;
+		background-color: grey;
+		font-size: 20px;
+		margin-bottom: 150px;
+		margin-left: 450px;
+	}
+
+	/*modifica en todas las views*/	
+	.menu_horizontal{
+		list-style: none;
+		display: flex;
+		justify-content: space-around;
+
+	}
+
+	/*modifica en todas las views*/
+	.menu_horizontal > li > a{
+		display: block;
+		padding: 15px 20px;
+		color: white;
+		text-decoration: none;
+	}
+
+	/*modifica en todas las views*/
+	.menu_horizontal >li:hover{
+		background-color: black;
+	}
+
+	/*modifica en todas las views*/
+	.menu_vertical{
+		position: absolute;
+		display: none;
+		list-style: none;
+		width: 200px;
+		background-color: rgba(0, 0, 0, .5);
+	}
+
+	/*modifica en todas las views*/
+	.menu_horizontal li:hover .menu_vertical{
+		display: block;
+	}
+
+	/*modifica en todas las views*/
+	.menu_vertical li:hover{
+		background-color: red;
+	}
+
+
+	/*modifica en todas las views*/
+	.menu_vertical li a{
+		display: block;
+		color: white;
+		text-decoration: none;
+	}
+
+	.contenido{
+		display: grid;
+		grid-template-areas: 
+		"texto_presentacion imagen_decorativa"
+		"cuadro_res reseñas_clientes";
+		grid-template-columns: auto auto;
+		grid-template-rows: auto auto; 
+	}
+
+	.texto_presentacion{
+		grid-area: texto_presentacion;
+	}
+
+	.imagen__decorativa{
+		grid-area: imagen_decorativa;
+	}
+
+	.cuadro_res{
+		grid-area: cuadro_res;
+	}
+	.reseñas_clientes{
+		grid-area: reseñas_clientes;
+	}
+
+	.cuadro__reseña{
+  	margin-right: 450px;
+  	margin-bottom: 150px;
+  	margin-left: 150px;
+	}
+	/*MODIFICA AL PIE DE PAGINA DE LAS VIEWS DUDAS,SERVICIOS,CONTACTO, INDEX*/
+	.pie_pagina3{
+		display: grid;
+		grid-template-areas: 
+		"imagen_whats3 titulo__footer3 titulo__footer3"
+		"texto__contacto3 texto__contacto3 texto__contacto3";
+		grid-template-columns: 250px 350px;
+		grid-template-rows: auto auto ;
+	}	
+	.imagen_whats3{
+		grid-area: imagen_whats3;
+	}
+
+	.texto__contacto3{
+		grid-area: texto__contacto3;
+		padding-right: 240px;
+	}
+
+	.titulo__footer3{
+		grid-area: titulo__footer3;
+		padding-right: 450px;	
+	}
+	.reseñas_clientes{
+		display: grid;
+		grid-template-areas: 
+		"nombre1 nombre2"
+		"opinion1 opinion2"
+		"nombre3 nombre4"
+		"opinion3 opinion4"
+		"nombre5 nombre6"
+		"opinion5 opinion6";
+		grid-template-columns: 250px 250px;
+		grid-template-rows: auto auto auto auto auto;
+		margin-right: 250px;
+	}
+
+	.nombre1{
+		grid-area: nombre1;
+
+	}
+	.nombre2{
+		grid-area: nombre2;
+
+	}
+	.nombre3{
+		grid-area: nombre3;
+	}
+	.nombre4{
+		grid-area: nombre4;
+
+	}
+	.nombre5{
+		grid-area: nombre5;
+	}
+	.nombre6{
+		grid-area: nombre6;
+	
+	}
+
+	.opinion1{
+		grid-area: opinion1;
+		display: flex;
+		flex-direction: row;
+		justify-content: center ;
+	}
+	.opinion2{
+		grid-area: opinion2;
+		display: flex;
+		flex-direction: row;
+		justify-content: center ;
+
+	}
+	.opinion3{
+		grid-area: opinion3;
+		display: flex;
+		flex-direction: row;
+		justify-content: center ;
+	}
+	.opinion4{
+		grid-area: opinion4;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+	
+	.contenido1{
+		display: grid;
+		grid-template-areas: 
+		"quienes quienes"
+		"empezar empezar";
+		grid-template-columns: auto auto;
+		grid-template-rows: auto auto;
+	}
+	.quienes{
+		grid-area: quienes;
+	}
+	.empezar{
+		grid-area: empezar;
+	}
+	
+	.quienes{
+		display: grid;
+		grid-template-areas: 
+		"titulo__explicacion titulo__explicacion"
+		"texto_explicacion imagen__reparacion";
+		grid-template-columns: auto auto;
+		grid-template-rows: auto auto;
+	}
+
+	.titulo__explicacion{
+		grid-area: titulo__explicacion;
+		display: flex;
+		justify-content: center;
+		padding-right: 250px;
+	}
+	.texto_explicacion{
+		grid-area: texto_explicacion;
+	}
+	.imagen__reparacion{
+		grid-area: imagen__reparacion;
+	}
+
+	iframe.video__presentacion{
+	border: 30px outset darkblue;
+	margin-bottom: 30px;
+	margin-top: 50px;
+	}
+
+	img.imagen__reparacion{
+	width: 850px;
+	}
+
+	.empezar{
+		display: grid;
+		grid-template-areas: 
+		"titulo__video video__presentacion"
+		"titulo__video video__presentacion";
+		grid-template-columns: auto;
+		grid-template-rows: auto auto;
+	}
+
+	.titulo__video{
+		grid-area: titulo__video;
+		margin-top: 152px;
+	}
+	.video__presentacion{
+		grid-area: video__presentacion;
+	}
+
+	.titulo__video{
+		font-size: 50px;
+		text-decoration: underline blue;
+	}
+
+
+	h2.titulo__explicacion{
+		font-size: 60px;
+	}
+
+	p.texto_explicacion{
+		font-style: italic;
+	}
+
+	.titulo__footer{
+		font-size: 40px;
+		text-align: center;
+		text-decoration: underline purple 8px;
+	}
+
+	p.texto__contacto{
+		text-align: center;
+		font-weight: bold;
+	}
+
+	.pie_pagina2{
+		display: grid;
+		grid-template-areas: 
+		"imagen_whats2 titulo__footer2 titulo__footer2"
+		"texto__contacto2 texto__contacto2 texto__contacto2";
+		grid-template-columns: 250px 350px;
+		grid-template-rows: auto auto ;
+	}	
+	.imagen_whats2{
+		grid-area: imagen_whats2;
+	}
+
+	.texto__contacto2{
+		grid-area: texto__contacto2;
+		padding-right: 240px;
+		text-align: center;
+		font-weight: bold;
+	}
+
+	.titulo__footer2{
+		grid-area: titulo__footer2;
+		padding-right: 450px;
+		font-size: 40px;
+		text-align: center;
+		text-decoration: underline purple 8px;
+	}	
+
+	.contenido3{
+		display: grid;
+		grid-template-areas: 
+		"tabla titulo_note"
+		"tabla carta";
+		grid-template-columns: auto auto;
+		grid-template-rows: auto auto;
+		grid-column-gap: 20px;
+	}
+
+	.tabla{
+		grid-area: tabla;
+		margin-bottom: 163px;
+		font-size: 20px;
+		color: darkgrey;
+		border: 20px inset sandybrown;
+	}
+	.carta{
+		grid-area: carta;
+		background-color: greenyellow;
+		margin-bottom: 50px;
+		margin-right: 50px;
+	}
+	.titulo_note{
+		grid-area: titulo_note;
+		font-size: 35px;
+		padding-left: 250px;
+		padding-bottom: 20px;
+		margin-bottom: 50px;
+		color: greenyellow;
+		text-decoration: underline black solid;
+	}
+
+	.pie_pagina3{
+		display: grid;
+		grid-template-areas: 
+		"imagen_whats3 titulo__footer3 titulo__footer3"
+		"texto__contacto3 texto__contacto3 texto__contacto3";
+		grid-template-columns: 250px 350px;
+		grid-template-rows: auto auto ;
+	}	
+	.imagen_whats3{
+		grid-area: imagen_whats3;
+	}
+
+	.texto__contacto3{
+		grid-area: texto__contacto3;
+		padding-right: 240px;
+		text-align: center;
+		font-weight: bold;
+	}
+
+	.titulo__footer3{
+		grid-area: titulo__footer3;
+		padding-right: 450px;
+		font-size: 40px;
+		text-align: center;
+		text-decoration: underline purple 8px;
+	}	
+	.contenido2{
+		display: grid;
+		grid-template-areas: 
+		"telefono_contacto contacto_mail"
+		"medios_pagos medios_pagos"
+		"mapa mapa";
+		grid-template-columns: auto auto;
+		grid-template-rows: auto auto;
+	}
+	.telefono_contacto{
+		grid-area: telefono_contacto;
+	}
+	.contacto_mail{
+		grid-area: contacto_mail;
+	}
+	.medios_pagos{
+		grid-area: medios_pagos;
+	}
+	.mapa{
+		grid-area: mapa;
+	}
+	.medios_pagos{
+		display: grid;
+		grid-template-areas: 
+		"titulo__pagos titulo__pagos"
+		"titulo__transferencia titulo__mercadoPago"
+		"logo__transferencia logo__mercadoPago";
+		grid-template-columns: auto auto;
+		grid-template-rows: auto auto auto;
+	}
+	.titulo__pagos{
+		grid-area: titulo__pagos;
+	}
+	.titulo__transferencia{
+		grid-area: titulo__transferencia;
+		margin-left: 282px;
+	}
+	.titulo__mercadoPago{
+		grid-area: titulo__mercadoPago;
+	}
+	.logo__transferencia{
+		grid-area: logo__transferencia;
+		margin-left: 250px;
+	}
+	.logo__mercadoPago{
+		grid-area: logo__mercadoPago;
+		width: 250px;
+		padding-left: 460px;
+	}
+	.mapa{
+		display: grid;
+		grid-template-areas: 
+		"titulo__local"
+		"mapa__local";
+		grid-template-columns: auto;
+		grid-template-rows: auto;
+	}
+	.titulo__local{
+		grid-area: titulo__local;
+		margin-left: 756px;
+		font-size: 35px;
+	}
+	.mapa__local{
+		grid-area: mapa__local;
+		margin-left: 614px;
+	}
+	.logo__telefono{
+		padding-left: 1710px;
+		width: 110px;
+		position: fixed;
+	}
+	.logo__email{
+		width: 350px;
+	}
+	.logo__transferencia{
+		width: 250px;
+	}
+
+	.titulo__telefono{
+		padding-left: 1200px;
+		text-decoration: underline green 5px;
+	}
+
+	.titulo__email{
+		color: palegreen;
+		font-size: 40px;
+	}
+
+	.titulo__mercadoPago{
+		text-align: center;
+		color: blue;
+	}
+
+	.titulo__local{
+		text-decoration: 4px underline grey;
+		color: hotpink;
+	
+	}
+
+	.titulo__pagos{
+		font-size: 40px;
+		text-align: center;
+		background-color: blueviolet;
+		color: white;
+	}
+	.telefono_img{
+		width: 250px;
+		padding-left: 350px;
+		margin-top: 50px;
+	}
+	.titulo_celular{
+		padding-left: 350px;
+		font-size: 30px;
+		margin-bottom: -16px;
+	}
+	.pie_pagina3{
+		display: grid;
+		grid-template-areas: 
+		"imagen_whats3 titulo__footer3 titulo__footer3"
+		"texto__contacto3 texto__contacto3 texto__contacto3";
+		grid-template-columns: 250px 350px;
+		grid-template-rows: auto auto ;
+	}	
+	.imagen_whats3{
+		grid-area: imagen_whats3;
+	}
+
+	.texto__contacto3{
+		grid-area: texto__contacto3;
+		padding-right: 240px;
+		text-align: center;
+		font-weight: bold;
+	}
+
+	.titulo__footer3{
+		grid-area: titulo__footer3;
+		padding-right: 450px;
+		font-size: 40px;
+		text-align: center;
+		text-decoration: underline purple 8px;
+	}	
+
+	.contenido4{
+		display: grid;
+		grid-template-areas: 
+		"titulo_duda preguntas_frecuentes"
+		"cuadro_duda preguntas_frecuentes";
+		grid-template-columns: auto auto;
+		grid-template-rows: auto auto;
+		overflow-x: hidden;
+	}
+	.titulo_duda{
+		grid-area: titulo_duda;
+	}
+	.preguntas_frecuentes{
+		grid-area: preguntas_frecuentes;
+		font-size: 15.5px;
+	}
+	.cuadro_duda{
+		grid-area: cuadro_duda;
+	}
+	.pregunta{
+		text-decoration: underline 5px black;
+		color: red;
+		font-style: italic;
+	}
+
+	.respuesta{
+		list-style: none;
+		color: hotpink;
+		
+		margin-right: 1350px;
+	}
+
+	.cuadro_duda{
+		background-color: yellow;
+		margin-right: 750px;
+		text-align: center;
+		margin-left: 250px;
+	}
+
+	h1{
+		text-align: center;
+		margin-right: 450px;
+	}
+
+
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dudas</title>
+	
+	<!--links del ccs-->
+	<link rel="stylesheet" href="../css/estilo.css">
+	<!--links de fuente gramática-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Merriweather+Sans:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+	<div class="indexEstilo">
+		<!--inicio encabezado-->
+	
+		<header class="header">
+			<!--LOGO-->
+			<div class="logo">
+
+				<a href="../index.html">
+					<img src="../assets/img/computadora.jpg" alt="logo" class="logo__pagina">
+				</a>
+
+			</div>
+			<!--cierre LOGO-->
+
+			<!--inicio barra de navegacion-->
+			<div class="barra_navegacion">
+				<ul class="menu_horizontal">
+					<li><a href="../index.html">Inicio</a></li>
+					<li>
+						<a href="servicios.html">Servicios</a>
+						<ul class="menu_vertical">
+							<li><a href="servicios.html #compra">Comprar Nothebook</a></li>
+							<li><a href="servicios.html #repuesto">Comprar Repuesto</a></li>
+							<li><a href="servicios.html #limpieza">Servicio Limpieza</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="nosotros.html">Nosotros</a>
+						<ul class="menu_vertical">
+							<li><a href="nosotros.html #quienes">¿Quienes somos?</a></li>
+							<li><a href="nosotros.html #empezar">¿Como empezamos?</a></li>
+						</ul>
+					</li>
+					<li><a href="contacto.html">Contacto</a></li>
+					<li>
+						<a href="#">Dudas</a>
+						<ul class="menu_vertical">
+							<li><a href="#frecuente">Preguntas frecuentes</a></li>
+							<li><a href="#duda">Deja Tu Duda</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<!--cierre barra de navegacion-->
+
+		</header>
+		<!--cierre de encabezado-->
+
+		<!--inicio contenido-->
+
+		<main class="contenido4">
+			<!--dudas para dejar-->
+			<div class="titulo_duda">
+				<h1 id="duda">Presenta Tus Dudas Aqui: </h1>
+			</div>
+
+			<form action="#" class="cuadro_duda">
+				<label for="Nombre" class="nombre_duda">Nombre: <input type="text" name="Nombre" placeholder="NOMBRE" required></label><br>
+
+				<br>
+
+				<label for="Apellido" class="apellido_duda">Apellido: <input type="text" name="Apellido" placeholder="APELLIDO" required></label><br>
+
+				<br>
+
+				<label for = "Mail" class="mail_duda">Mail: <input type="text" name="Mail" placeholder="MAIL" required></label><br>
+
+				<br>
+
+				<label for="Contraseña" class="constraseña_duda">Constraseña: <input type="Password" name="Contraseña" placeholder="CONTRASEÑA" required></label><br>
+
+				<br>
+
+				<div class="tip_consulta">Tipo de consulta:
+					<select name="duda" id="consulta">
+						<option value="0">SELECCIONE EL TIPO DE CONSULTA</option>
+						<option value="1">REPARACION</option>
+						<option value="2">CAMBIO DE COMPONENTE</option>
+						<option value="3">CONSULTA DE PRESUPUESTO</option>
+					
+					</select>
+				</div>
+
+				<div class="terminos">
+					<h3>Acepto términos y condiciones: </h3>
+					<h4>aceptar</h4>
+					<input type="checkbox" name="aceptar" value="1" required>
+	
+				</div>
+
+
+
+				<div class="duda_texto">
+					<h3>Dudas: </h3>
+					<textarea name="" id= "" cols= "50" rows= "20" required></textarea>
+
+					<br>
+
+					<input type="submit" value="enviar">
+					<input type="reset" value="cancelar">
+
+		
+				</div>
+			</form>
+
+			<!--fin cuadro para dejar dudas-->
+
+			<!--preguntas frecuentes-->
+
+			<div class="preguntas_frecuentes">
+				<h2 id="frecuente">PREGUNTAS FRECUENTES</h2>
+			
+				<br>
+				<div>
+					<h4 class="pregunta">¿Puedo usar mi nothebook en la cama?</h4>
+						<ul class="respuesta">
+							<li>Si,pero no es recomendable ya que le quitamos ventilacion. </li>
+						</ul>
+					<h4 class="pregunta">¿Es recomendable usar la nothebook con el cargador puesto?</h4>
+						<ul class="respuesta">
+							<li>No es recomendable, ya que la bateria la estas sobrecargando. </li>
+						</ul>
+					<h4 class="pregunta">¿Cada cuanto hay que limpiar mi nothebook?</h4>
+						<ul class="respuesta">
+							<li>Por lo menos cada 6 meses desarlarma y limpiar con aire. </li>
+						</ul>
+					<h4 class="pregunta">¿Cuanto tiempo lleva la reparacion?</h4>
+						<ul class="respuesta">
+							<li>Depende que reparacion necesite, primero hay que analizar<br> 
+							    y avisar al cliente si acepta el presupuesto de reparacion. </li>
+						</ul>
+					<h4 class="pregunta">¿Mi nothebook no se inicia que puedo hacer?</h4>
+						<ul class="respuesta">
+							<li>Proba de apretar alt f12, si no anda traela al local y vemos. </li>
+						</ul>
+				</div>
+			</div>
+
+			<!--fin preguntas frecuentes-->
+		
+		</main>
+		<!--fin contenido-->
+
+		<!--inicio footer-->
+
+		<footer class="footer">
+			<!--redes sociales-->
+			<div class="pie_pagina3">
+				<h3 class="titulo__footer3">REDES SOCIALES Y CONTACTO</h3>
+				<a href="https://www.whatsapp.com/?lang=es" target="_blank" class="imagen_whats3">
+					<img src="../assets/img/whatsapp.jpg" class="logo_whatsapp">
+				</a>
+			
+				<!--texto de contacto-->
+
+				<p class="texto__contacto3">
+					Telefono: 3516710707<br>
+					Email: nachorojos99 @ gmail.com<br>
+					Horario De Atencion: Lun a Sab de 9 hs a 18 hs<br>
+					Direccion: Hector Paniza Esquina Maestro Vidal<br>
+				</p>
+
+			</div>
+
+		</footer>
+
+		<!--cierre footer-->
+
+	</div>
+</body>
+</html>
