@@ -4,11 +4,7 @@
 *{
 	font-family: 'Merriweather Sans', sans-serif;
 }
-/*MODIFICA A TODAS LAS VIEWS*/
-body{
-	background-image:linear-gradient(to bottom, skyblue, white);
 
-}
 
 /* estilo del index.html */
 
@@ -92,7 +88,7 @@ p.texto_explicacion{
 	/*COLOR DISTINTIVO DE LA MEDIA QUERIE*/
 
 	body{
-		background-color: lightpink;
+			background-image:linear-gradient(to bottom, lightpink, white);
 	}
 	
 	/*GRID GENERAL PARA TODAS LAS VIEWS*/
@@ -681,6 +677,11 @@ p.texto_explicacion{
 
 @media only screen and (min-width: 1024px){
 
+	/*MODIFICA A TODAS LAS VIEWS*/
+	body{
+		background-image:linear-gradient(to bottom, skyblue, white);
+	}
+
 	.logo__pagina{
 		width: 236px;
 		height: 230px;
@@ -1102,6 +1103,36 @@ p.texto_explicacion{
 		width: 250px;
 		padding-left: 460px;
 	}
+	.transition{
+		width: 250px;
+		transition: all 2s;
+	}
+	.transition:hover{
+		width: 350px;
+	}
+	.transition2{
+		width: 250px;
+		transition: all 2s;
+	}
+	.transition2:hover{
+		width: 350px;
+	}
+	img.transition3{
+		width: 350px;
+		transition: all 2s;
+	}
+	img.transition3:hover{
+		width: 450px;
+	}
+	img.transition4{
+		transition: all 2s;
+	}
+	img.transition4:hover{
+		width: 350px;
+	}
+
+	
+	
 	.mapa{
 		display: grid;
 		grid-template-areas: 
