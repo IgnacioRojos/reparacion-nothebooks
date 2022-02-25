@@ -56,13 +56,15 @@ div.logo{
  
 /*fin del estilo del index.html*/
 
-/*inicioo estilo de nosotros.html*/
+
+/*inicio estilo de nosotros.html*/
 
 p.texto_explicacion{
 	font-style: italic;
 }
 
 /*cierre del estilo de nosotros.html*/
+
 
 /*inicio del estilo servicios.html */
 
@@ -189,6 +191,10 @@ p.texto_explicacion{
 		color: white;
 		text-decoration: none;
 	}
+
+	/*FIN GRID PARA TODAS LAS VIEWS*/
+
+
 	/*GRID DE LA VISTA INDEX*/
 
 	.contenido{
@@ -240,6 +246,8 @@ p.texto_explicacion{
 		grid-area: cuadro__reseña;
 		padding-right: 554px;
 	}
+
+
 
 	/*MODIFICA AL PIE DE PAGINA DE LAS VIEWS DUDAS,SERVICIOS,CONTACTO, INDEX*/
 	.pie_pagina3{
@@ -336,6 +344,7 @@ p.texto_explicacion{
 	}
 
 	/*FIN GRID DE LA VISTA INDEX*/
+
 
 
 	/*GRID DE LA VISTA NOSOTROS*/
@@ -437,6 +446,7 @@ p.texto_explicacion{
 	/*FIN GRID DE LA VISTA NOSOTROS*/
 
 
+
 	/*GRID DE LA VISTA SERVICIOS*/
 	.contenido3{
 		display: grid;
@@ -472,6 +482,8 @@ p.texto_explicacion{
 		text-decoration: underline black solid;
 	}
 
+
+
 	/*MODIFICA AL PIE DE PAGINA DE LAS VIEWS DUDAS,SERVICIOS,CONTACTO, INDEX*/
 	.pie_pagina3{
 		display: grid;
@@ -504,6 +516,7 @@ p.texto_explicacion{
 	}
 
 	/*FIN GRID DE LA VISTA SERVICIOS*/
+
 
 
 	/*GRID DE LA VISTA CONTACTO*/
@@ -574,6 +587,33 @@ p.texto_explicacion{
 		/*padding-left: 460px;*/
 		width: 250px;
 	}
+	.transition{
+		width: 250px;
+		transition: all 2s;
+	}
+	.transition:hover{
+		width: 350px;
+	}
+	.transition2{
+		width: 250px;
+		transition: all 2s;
+	}
+	.transition2:hover{
+		width: 350px;
+	}
+	img.transition3{
+		width: 350px;
+		transition: all 2s;
+	}
+	img.transition3:hover{
+		width: 450px;
+	}
+	img.transition4{
+		transition: all 2s;
+	}
+	img.transition4:hover{
+		width: 350px;
+	}
 
 	.mapa{
 		display: grid;
@@ -608,6 +648,8 @@ p.texto_explicacion{
 		width: 1px;
 	}
 	/*FIN GRID DE LA VISTA CONTACTO*/
+
+
 
 	/*GRID DE LA VISTA DUDA*/
 
@@ -666,10 +708,12 @@ p.texto_explicacion{
 	/*FIN GRID DE LA VISTA DUDA*/
 
 	
+
 }
 
 /*FIN MEDIA QUERIE MOBILE*/
 	
+
 
 
 
@@ -764,6 +808,10 @@ p.texto_explicacion{
 		color: white;
 		text-decoration: none;
 	}
+	/*FIN GRID PARA TODAS LAS VIEWS*/
+
+
+	/*INICIO GRID AL INDEX*/
 
 	.contenido{
 		display: grid;
@@ -794,6 +842,9 @@ p.texto_explicacion{
   	margin-bottom: 150px;
   	margin-left: 150px;
 	}
+
+
+
 	/*MODIFICA AL PIE DE PAGINA DE LAS VIEWS DUDAS,SERVICIOS,CONTACTO, INDEX*/
 	.pie_pagina3{
 		display: grid;
@@ -816,6 +867,11 @@ p.texto_explicacion{
 		grid-area: titulo__footer3;
 		padding-right: 450px;	
 	}
+
+	/* FIN MODIFICACION AL PIE DE PAGINA DE LAS VIEWS DUDAS,SERVICIOS, INDEX*/
+
+
+
 	.reseñas_clientes{
 		display: grid;
 		grid-template-areas: 
@@ -878,7 +934,13 @@ p.texto_explicacion{
 		flex-direction: row;
 		justify-content: center;
 	}
+
+	/*FIN GRID INDEX*/
+
+
 	
+	/*INICIO GRID NOSOTROS*/
+
 	.contenido1{
 		display: grid;
 		grid-template-areas: 
@@ -957,6 +1019,8 @@ p.texto_explicacion{
 		font-style: italic;
 	}
 
+
+	/*GRID PIE DE PAGINA NOSOTROS*/
 	.titulo__footer{
 		font-size: 40px;
 		text-align: center;
@@ -993,7 +1057,16 @@ p.texto_explicacion{
 		font-size: 40px;
 		text-align: center;
 		text-decoration: underline purple 8px;
-	}	
+	}
+	/*FIN GRID PIE DE PAGINA NOSOTROS*/
+
+	/*FIN GRID NOSOTROS*/	
+
+
+
+
+
+	/*INICIO GRID SERVICIOS*/
 
 	.contenido3{
 		display: grid;
@@ -1027,33 +1100,11 @@ p.texto_explicacion{
 		color: greenyellow;
 		text-decoration: underline black solid;
 	}
+	/*FIN GRID SERVICIOS*/
 
-	.pie_pagina3{
-		display: grid;
-		grid-template-areas: 
-		"imagen_whats3 titulo__footer3 titulo__footer3"
-		"texto__contacto3 texto__contacto3 texto__contacto3";
-		grid-template-columns: 250px 350px;
-		grid-template-rows: auto auto ;
-	}	
-	.imagen_whats3{
-		grid-area: imagen_whats3;
-	}
 
-	.texto__contacto3{
-		grid-area: texto__contacto3;
-		padding-right: 240px;
-		text-align: center;
-		font-weight: bold;
-	}
+	/*INICIO GRID CONTACTO*/
 
-	.titulo__footer3{
-		grid-area: titulo__footer3;
-		padding-right: 450px;
-		font-size: 40px;
-		text-align: center;
-		text-decoration: underline purple 8px;
-	}	
 	.contenido2{
 		display: grid;
 		grid-template-areas: 
@@ -1199,6 +1250,8 @@ p.texto_explicacion{
 		font-size: 30px;
 		margin-bottom: -16px;
 	}
+
+	/*INICIO PIE DE PAGINA CONTACTO*/
 	.pie_pagina3{
 		display: grid;
 		grid-template-areas: 
@@ -1224,7 +1277,16 @@ p.texto_explicacion{
 		font-size: 40px;
 		text-align: center;
 		text-decoration: underline purple 8px;
-	}	
+	}
+
+	/*FIN PIE DE PAGINA CONTACTO*/
+
+	/*FIN GRID CONTACTO*/	
+
+
+
+
+	/*INICIO GRID DUDAS*/
 
 	.contenido4{
 		display: grid;
@@ -1270,5 +1332,6 @@ p.texto_explicacion{
 		margin-right: 450px;
 	}
 
+	/*FIN GRID DUDAS*/
 
 }
