@@ -472,9 +472,8 @@ p.texto_explicacion{
 	.carta{
 		grid-area: carta;
 		background-image:linear-gradient(to bottom, greenyellow, whitesmoke);
-		width: 21px;
-		font-size: 15px;
-		
+		font-size: 13px;
+		width: 20px;
 	}
 	.titulo_note{
 		grid-area: titulo_note;
@@ -602,17 +601,17 @@ p.texto_explicacion{
 		width: 350px;
 	}
 	img.transition3{
-		width: 350px;
+		width: 150px;
 		transition: all 2s;
 	}
 	img.transition3:hover{
-		width: 450px;
+		width: 250px;
 	}
 	img.transition4{
 		transition: all 2s;
 	}
 	img.transition4:hover{
-		width: 350px;
+		width: 250px;
 	}
 
 	.mapa{
@@ -626,22 +625,20 @@ p.texto_explicacion{
 
 	.titulo__local{
 		grid-area: titulo__local;
-		/*margin-left: 756px;*/
-		/*font-size: 35px;*/
+		
 	}
 
 	.mapa__local{
 		grid-area: mapa__local;
-		/*margin-left: 614px;*/
-		width: 362px;
+		width: 320px;
 	}
 
 	.logo__email{
-		width: 250px;
+		width: 20px;
 	}
 
 	.telefono_img{
-		width: 250px;
+		width: 150px;
 	}
 	
 	.logo__telefono{
@@ -661,6 +658,7 @@ p.texto_explicacion{
 		"preguntas_frecuentes";
 		grid-template-columns: auto auto;
 		grid-template-rows: auto auto;
+		overflow-x: hidden;
 		
 	}
 
@@ -671,6 +669,10 @@ p.texto_explicacion{
 	.preguntas_frecuentes{
 		grid-area: preguntas_frecuentes;
 		/*font-size: 15.5px;*/
+		width: 346px;
+	}
+	.pie_titulo{
+		font-size: 24px;
 	}
 
 	.cuadro_duda{
@@ -678,7 +680,7 @@ p.texto_explicacion{
 	}
 
 	textarea{
-		width: 344px;
+		width: 227px;
 	}
 
 	.pregunta{
@@ -695,7 +697,7 @@ p.texto_explicacion{
 
 	.cuadro_duda{
 		background-color: yellow;
-		width: 358px;
+		width: 322px;
 		text-align: center;
 		
 	}
@@ -1169,7 +1171,7 @@ p.texto_explicacion{
 		width: 350px;
 	}
 	img.transition3{
-		width: 350px;
+		width: 250px;
 		transition: all 2s;
 	}
 	img.transition3:hover{
